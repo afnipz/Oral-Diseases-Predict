@@ -9,7 +9,7 @@ import google.generativeai as genai
 # ==== Wajib isi API key via environment, biar aman ====
 # Windows (PowerShell):  setx GEMINI_API_KEY "YOUR_KEY"
 # macOS/Linux (bash):    export GEMINI_API_KEY="YOUR_KEY"
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyC0EuRcKIb4Vb77Dfj91TnwukQ7fTc-htE").strip()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 if not GEMINI_API_KEY:
     raise RuntimeError("GEMINI_API_KEY belum di-set. Set dulu di environment ya.")
 
